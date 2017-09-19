@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head></head>
+	<body>
+		<script>
+			/*var number = parseFloat(prompt("Enter a number"));
+			var times =1;
+			for (times=1; times <= 12; times++) {
+				document.write(number+"*"+times+"="+(number*times)+"<br/>");
+			}
+
+			function timesTable(int, startBy, endBy) {
+				for (;startBy <= endBy;startBy++) {
+					document.write(int+"*"+startBy+"="+(int*startBy)+"<br/>")
+				}
+			}*/
+			/*for (var int=0; int<20; int++){*/
+			var int=prompt("Enter the times table");
+
+
+			if (isNaN(int)== true){
+				int = prompt(int+" is not a valid number, please retry.");
+			} else if (int == -1){
+				document.write("Process stopped");
+			} else {
+					math.timesTable = timesTable;
+					function timesTable(int, startBy, endBy) {
+					for (;startBy <= endBy;startBy++) {
+						document.write(int+"x"+startBy+"="+(int*startBy)+"<br/>");
+						return math;
+						}
+					}
+				}
+				document.write(timesTable(int, 1, 10));
+			/*}*/
+		</script>
+	</body>
+</html>
